@@ -8,7 +8,9 @@
 import Foundation
 
 /// A model describing recipe.
-struct Recipe {
+struct Recipe: Identifiable {
+	/// Unique identifier.
+	let id = UUID()
 	/// Title for the recipe
 	let title: String
 	/// Headline for the recipe.
@@ -31,7 +33,7 @@ struct Recipe {
 
 // MARK: - Data
 extension Recipe {
-	var recipes: [Self] {
+	static var recipes: [Self] {
 		[
 			Recipe(
 				title: "Avocado Crostini",

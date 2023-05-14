@@ -10,9 +10,11 @@ import SwiftUI
 struct ContentView: View {
 	// MARK: - Properties
 	/// Array of headers.
-	var headers = Header.headers
+	let headers = Header.headers
 	/// Array of facts.
-	var facts = Fact.facts
+	let facts = Fact.facts
+	/// Array of recipes
+	let recipes = Recipe.recipes
 	
 	// MARK: - Body
     var body: some View {
@@ -50,6 +52,19 @@ struct ContentView: View {
 					.padding(.leading, 60)
 					.padding(.trailing, 20)
 				}
+				
+				// MARK: - Recipes
+				Text("Avocado Recipes")
+					.fontWeight(.bold)
+					.modifier(TitleModifier())
+				
+				VStack(alignment: .center, spacing: 20) {
+					ForEach(recipes) { item in
+						RecipeCardView(recipe: item)
+					}
+				}
+				.frame(maxWidth: 640)
+				.padding(.horizontal)
 				
 				// MARK: - Footer
 				VStack(alignment: .center, spacing: 20) {
