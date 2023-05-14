@@ -8,7 +8,9 @@
 import Foundation
 
 /// A model for the header section
-struct Header {
+struct Header: Identifiable {
+	/// Id of the header.
+	var id = UUID()
 	/// Image name.
 	let image: String
 	/// Title for the header.
@@ -19,7 +21,8 @@ struct Header {
 
 // MARK: - Data
 extension Header {
-	var headers: [Self] {
+	/// Collection of headers.
+	static var headers: [Self] {
 		[Header(
 			image: "avocado-slice-1",
 			title: "Avocados",
