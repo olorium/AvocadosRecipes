@@ -9,6 +9,7 @@ import SwiftUI
 
 struct RecipeCardView: View {
 	// MARK: - Properties
+	@State private var showModal = false
 	/// Recipe for this view.
 	var recipe: Recipe
 	
@@ -46,29 +47,9 @@ struct RecipeCardView: View {
 					.foregroundColor(.gray)
 					.italic()
 				
-				HStack {
-					ForEach(1...(recipe.rating), id: \.self) { _ in
-						Image(systemName: "star.fill")
-							.font(.body)
-						.foregroundColor(.yellow)
-					}
-				}
-				HStack(alignment: .center, spacing: 12) {
-					HStack(alignment: .center, spacing: 2) {
-						Image(systemName: "person.2")
-						Text("Serves: \(recipe.serves)")
-					}
-					HStack(alignment: .center, spacing: 2) {
-						Image(systemName: "clock")
-						Text("Prep: \(recipe.preparation)")
-					}
-					HStack(alignment: .center, spacing: 2) {
-						Image(systemName: "flame")
-						Text("Cooking: \(recipe.cooking)")
-					}
-				}
-				.font(.footnote)
-				.foregroundColor(.gray)
+				RecipeRatingView(recipe: recipe)
+				
+				RecipeCookingView(recipe: recipe)
 			}
 			.padding()
 			.padding(.bottom, 12)
@@ -76,6 +57,12 @@ struct RecipeCardView: View {
 		.background(Color.white)
 		.cornerRadius(12)
 		.shadow(color: Color("ColorBlackTransparentLight"), radius: 8)
+		.onTapGesture {
+			showModal = true
+		}
+		.sheet(isPresented: $showModal) {
+			RecipeDetailView(recipe: recipe)
+		}
     }
 }
 
