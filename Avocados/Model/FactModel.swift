@@ -8,7 +8,9 @@
 import Foundation
 
 /// A model describing facts.
-struct Fact {
+struct Fact: Identifiable {
+	/// Unique ID.
+	let id = UUID()
 	/// Image name for the fact.
 	let image: String
 	/// Content for the fact.
@@ -16,7 +18,7 @@ struct Fact {
 }
 
 extension Fact {
-	var facts: [Self] {
+	static var facts: [Self] {
 		[Fact(
 			image: "avocado-fact-1",
 			content: "Avocado trees contain enzymes that prevent the fruit from ever ripening on the tree, allowing farmers to use the trees as storage devices for up to 7 months after they reach maturity."
