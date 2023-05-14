@@ -33,7 +33,7 @@ struct AppView: View {
 		}
 		.edgesIgnoringSafeArea(.top)
 		.accentColor(.primary)
-    }
+	}
 }
 
 struct AppView_Previews: PreviewProvider {
