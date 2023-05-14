@@ -12,6 +12,10 @@
 		8B8558262A110797008646F1 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8558252A110797008646F1 /* SettingsView.swift */; };
 		8B8558282A1107A9008646F1 /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8558272A1107A9008646F1 /* AppView.swift */; };
 		8B85582A2A111506008646F1 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8558292A111506008646F1 /* HeaderView.swift */; };
+		8B85582D2A1120B4008646F1 /* HeaderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B85582C2A1120B4008646F1 /* HeaderModel.swift */; };
+		8B8558312A1121EE008646F1 /* RipeningModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8558302A1121EE008646F1 /* RipeningModel.swift */; };
+		8B8558332A1123A8008646F1 /* FactModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8558322A1123A8008646F1 /* FactModel.swift */; };
+		8B8558352A112423008646F1 /* RecipeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B8558342A112423008646F1 /* RecipeModel.swift */; };
 		8B878CCE2A09745400D1EA54 /* AvocadosApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B878CCD2A09745400D1EA54 /* AvocadosApp.swift */; };
 		8B878CD02A09745400D1EA54 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B878CCF2A09745400D1EA54 /* ContentView.swift */; };
 		8B878CD22A09745500D1EA54 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B878CD12A09745500D1EA54 /* Assets.xcassets */; };
@@ -25,6 +29,10 @@
 		8B8558252A110797008646F1 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		8B8558272A1107A9008646F1 /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
 		8B8558292A111506008646F1 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		8B85582C2A1120B4008646F1 /* HeaderModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderModel.swift; sourceTree = "<group>"; };
+		8B8558302A1121EE008646F1 /* RipeningModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RipeningModel.swift; sourceTree = "<group>"; };
+		8B8558322A1123A8008646F1 /* FactModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactModel.swift; sourceTree = "<group>"; };
+		8B8558342A112423008646F1 /* RecipeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeModel.swift; sourceTree = "<group>"; };
 		8B878CCA2A09745400D1EA54 /* Avocados.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Avocados.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B878CCD2A09745400D1EA54 /* AvocadosApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvocadosApp.swift; sourceTree = "<group>"; };
 		8B878CCF2A09745400D1EA54 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -54,6 +62,10 @@
 		8B85581F2A110731008646F1 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				8B85582C2A1120B4008646F1 /* HeaderModel.swift */,
+				8B8558302A1121EE008646F1 /* RipeningModel.swift */,
+				8B8558322A1123A8008646F1 /* FactModel.swift */,
+				8B8558342A112423008646F1 /* RecipeModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -189,11 +201,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				8B8558262A110797008646F1 /* SettingsView.swift in Sources */,
+				8B8558352A112423008646F1 /* RecipeModel.swift in Sources */,
 				8B878CD02A09745400D1EA54 /* ContentView.swift in Sources */,
 				8B8558282A1107A9008646F1 /* AppView.swift in Sources */,
+				8B8558332A1123A8008646F1 /* FactModel.swift in Sources */,
 				8B8558242A110779008646F1 /* RipeningStagesView.swift in Sources */,
 				8B878CCE2A09745400D1EA54 /* AvocadosApp.swift in Sources */,
 				8B8558222A11075E008646F1 /* AvocadosView.swift in Sources */,
+				8B85582D2A1120B4008646F1 /* HeaderModel.swift in Sources */,
+				8B8558312A1121EE008646F1 /* RipeningModel.swift in Sources */,
 				8B85582A2A111506008646F1 /* HeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
