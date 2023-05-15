@@ -1,4 +1,4 @@
-# Avocados - recipe app build with SwiftUI
+# Avocados - recipe app build with SwiftUI
 
 <div>
 <img src="./Readme/1.png" alt="" width="375"/>
@@ -7,7 +7,7 @@
 
 Recipe app build with Swift, SwiftUI for iOS 14
 
-### Features:
+### Features:
 
 - Custom Loading screen
   
