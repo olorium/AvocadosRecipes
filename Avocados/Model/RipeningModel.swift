@@ -8,7 +8,8 @@
 import Foundation
 
 /// A model describing ripening
-struct Ripening {
+struct Ripening: Identifiable {
+	let id = UUID()
 	/// Image name.
 	let image: String
 	/// Stage of ripening.
@@ -25,7 +26,7 @@ struct Ripening {
 
 // MARK: - Data
 extension Ripening {
-	var ripening: [Self] {
+	static var ripening: [Self] {
 		[Ripening(
 			image: "avocado-ripening-1",
 			stage: "1",
